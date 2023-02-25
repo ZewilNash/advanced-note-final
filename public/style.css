@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#90EE90 50% , #fff 50%);
+}
+
+.form {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 3px;
+    width: 300px;
+}
+
+.form .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form .header img{
+    width: 130px;
+    height: 130px;
+}
+
+.form .user_image input {
+    display: none;
+}
+
+.form .user_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form .user_image label {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 20px;
+    color: #90EE90;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.form .first_name , .form .last_name , .form .email , .form .password , .form .cpnfirm_pass{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.form label {
+    margin-bottom: 2px;
+    font-size: 13px;
+    color: #90EE90;
+}
+
+.form input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #90EE90;
+}
+
+
+
+.form .separetor span{
+    display: flex;
+    justify-content: center;
+    color: #90EE90;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.form .signup_options{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+
+.form .signup_options button {
+    font-size: 12px;
+    height: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.form .signup_options #facebook_btn{
+    background-color: #4267B2;
+    color: #fff;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.form .signup_options #google_btn{
+    background-color: red;
+    color: #fff;
+    border-radius: 3px;
+    padding: 2px;
+}
+
+.to-login{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.submit button {
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    background-color: #90EE90;
+    color: #fff;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.to-login i , .to-signup i{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(206, 194, 194);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.forget-pass{
+    display: flex;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.forget-pass #forget_pass{
+    margin-left: 10px;
+    cursor: pointer;
+    color: #90EE90;
+    font-weight: bold;
+}
+
+.final-step .to-forgetpass{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(206, 194, 194);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.final-step .new-pass{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+
+.toast {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+    background-color:#fff;
+    height: 30px;
+    width: 200px;
+    align-items: center;
+    display: flex;
+    font-size: 11px;
+    color: springgreen;
+    opacity: 0;
+}
+
+.random-quote{
+    position: absolute;
+    left: 0;
+    margin: 20px;
+    display: flex;
+    margin: 20px;
+    width: auto;
+    top: 0;
+    font-size: 12px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.random-quote i {
+    margin: 15px;
+}
+
+.random-quote span {
+    color: rgb(1, 29, 1);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+
+@keyframes toast-show{
+    0%{
+        width: 0;
+        opacity: 0;
+    }
+
+    100% {
+        width: 100%;
+        opacity: 1;
+    }
+}
+@keyframes toast-hide{
+    0%{
+        width: 100%;
+        opacity: 1;
+    }
+
+    100% {
+        width: 0;
+        opacity: 0;
+    }
+}

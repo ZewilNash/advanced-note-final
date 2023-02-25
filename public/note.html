@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="note.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- random motivation quote -->
+    <!-- <div class="random-quote">
+        <i class="fa-solid fa-quote-left"></i> <p id="quote">Quote</p>  <i class="fa-solid fa-quote-right"></i> <span id="quote-author">~ Author</span>
+    </div> -->
+    <!-- error messages -->
+
+    <span id="error" class="hide">Error</span>
+
+    <!-- add note on speak -->
+
+    <div class="speak-note">
+        <button id="speak-note"><i id="speak-icon" class="fa-solid fa-headphones-simple"></i><i id="listen-icon" class="fa-solid fa-ear-listen hide"></i></button>
+        <!-- <i id="listen-icon" class="fa-solid fa-ear-listen"></i> -->
+    </div>
+
+
+    <div class="user-rate">
+
+        <div class="trophy-icon">
+            <i class="fa-solid fa-trophy"></i>
+        </div>
+
+        <ul class="user-character">
+            <li class="status"><i id="status" class="fa-solid"></i></li><p class="status-tooltip">You're a rocket</p>
+            <li class="percent"></li><p class="persent-tooltip"></p>
+            <li class="best-day-of-week">MON</li><p class="bestofw-tooltip">Your best day of the week</p>
+        </ul>
+
+    </div>
+
+    <div class="signout" id="signout">
+        <button><i class="fa-solid fa-right-from-bracket"></i></button>
+    </div>
+
+    <!-- timing note section -->
+    <div class="set-time-sec">
+        
+        <div class="timing-task-form">
+            <input type="text" placeholder="Type note to set time for..." id="timing-task">
+            <input type="time" id="task-time" />
+            <button id="set-timing">Apply</button>
+        </div>
+
+        <div class="timing" id="timing-note">
+            <button><i class="fa-regular fa-clock"></i></button>
+        </div>
+    </div>
+
+<!-- end timing note -->
+    <div class="container">
+        <div class="user_details">
+            <!-- done -->
+        </div>
+    </div>
+
+    <div class="note-form">
+        <div class="form">
+            <input type="text" id="user_note" placeholder="Type a note..." />
+            <button id="add_note">Add</button>
+        </div>
+
+        <div class="form-edit hide">
+            <input type="text" id="edit_note_input" placeholder="Type New Note..." />
+            <button id="edit_note">Edit</button>
+        </div>
+
+    </div>
+
+    <!-- notes section -->
+    <div class="notes">
+
+    </div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"
+        integrity="sha512-LUKzDoJKOLqnxGWWIBM4lzRBlxcva2ZTztO8bTcWPmDSpkErWx0bSP4pdsjNH8kiHAUPaT06UXcb+vOEZH+HpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="note.js"></script>
+</body>
+
+</html>
