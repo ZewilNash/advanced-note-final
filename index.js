@@ -11,12 +11,9 @@ const app = express()
 
 app.use(express.static("./public"))
 app.use(express.json())
-app.options("*", cors({ origin: 'http://localhost:5000', optionsSuccessStatus: 200 }));
 
-app.use(cors({
-    origin: 'http://localhost:5000',
-    optionsSuccessStatus: 200
-}))
+
+app.use(cors())
 app.use(express.urlencoded({extended:true}))
 app.use("/api/user" , userRoutes)
 app.use("/api/note" , noteRoutes)
